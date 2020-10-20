@@ -1,0 +1,425 @@
+/*
+	Template Name: BizCraft Responsive HTML5/CSS3 Template
+	Author: themefisher
+	Author URI: http://themefisher.com
+	Description: BizCraft Responsive HTML5/CSS3 Template.
+	Version: 1.0
+*/
+/* Table of Content
+==================================================
+1.	Global Styles
+2. 	Typography
+3. 	Common Styles
+4.	Header area
+5.	Slideshow
+6.	Services and Features
+7.	Image Block
+6.	About (Landing and Featured Tab)
+9.	Portfolio
+10.	Counter
+11.	Team
+12.	Pricing
+13.	Testimonial
+14. Video block
+15.	Recent Post
+16. Clients
+17. Twitter
+18. Contact
+19. Footer
+20. Copyright
+21. Sub pages
+22. Blog
+23. Landing page
+24.	Style Swithcer (you can delete the css) */
+.navbar-brand {
+    background: #ed2024;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-family: cairo;
+}
+.navbar-nav .dropdown-menu {
+	text-align: right;
+	font-size: 16px;
+	    font-family: cairo;
+    width: 230px;
+}
+.btn.btn-primary.white {
+    font-size: 18px;
+    font-family: cairo;
+    margin-left:20px;
+}
+.btn.btn-primary.solid {
+    font-size: 18px;
+    font-family: cairo;
+}
+.fontw{
+	font-family: cairo;
+	margin-left: 7px;
+	margin-top:20px;
+}
+.fontww{
+	font-family: cairo;
+	font-size: 18px;
+}
+.selected.fontw{
+	font-family: cairo;
+		margin-top:20px;
+}
+.title {
+    position: relative;
+    margin: 0;
+    line-height: 32px;
+    border-right: 2px solid #e7e7e7;
+    display: inline-block;
+    padding-left: 15px;
+    transition: all 0.3s ease 0s;
+    float: right;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 10px;
+    border-left: none;
+    font-family: cairo;
+
+}
+.title-icon {
+    font-size: 32px;
+    margin-left: 15px;
+    margin-top: 9px;
+    color: #959595;
+}
+.title-desc {
+    padding-top: 15px;
+    font-family: cairo;
+    font-size: 20px;
+    line-height: normal;
+}
+.service-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cairo;
+}
+.fontwe{
+	font-size: 20px;
+	font-family: cairo;
+}
+
+.isotope-nav {
+    float: left;
+}
+.fontww {
+    font-family: cairo;
+    text-align: right;
+    margin-right: 25px;
+        color: #ed2024;
+}
+.fontwww {
+    font-family: cairo;
+    text-align: right;
+        margin-right: 25px;
+        font-size: 20px;
+}
+.fontwz{
+ font-family: cairo;
+    font-size: 18px;
+}
+.fontwqw{
+	    text-align: right;
+    font-size: 20px;
+    font-family: cairo;
+    font-weight: bold;
+}
+.fontwwwa {
+    font-family: cairo;
+    text-align: right;
+    margin-right: 25px;
+    padding-right: 25px;
+        font-size: 18px;
+}
+.angle:before {
+    background: #fff;
+    content: "";
+    height: 75px;
+    top: -37px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    -webkit-transform: skew(0deg,2deg);
+    -moz-transform: skew(0deg,2deg);
+    -ms-transform: skewX(0deg) skewY(2deg);
+    -o-transform: skew(0deg,2deg);
+    transform: skew(0deg,2deg);
+}
+.owl-carousel {
+    direction: ltr;
+}
+.fontp{
+	 font-family: cairo;
+    text-align: center;
+    font-size: 18px;
+}
+.testimonial-text.a{
+	 font-family: cairo;
+    text-align: center;
+    font-size: 18px;
+}
+.name.a{
+	 font-family: cairo;
+    text-align: center;
+    font-size: 18px;
+}
+ .widget-title.a{
+    font-family: cairo;
+    text-align: right;
+    color: #fff;
+}
+.fontf{
+	font-family: cairo;
+    text-align: right;
+}
+.fotner {
+    text-align: right;
+    color: #fff;
+    font-family: cairo;
+    font-size: 18px;
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+.pros{
+	font-family: cairo;
+	font-size: 18px;
+}
+.owl-item{
+	margin-left: 40px;
+}
+.team.aw{
+    padding-bottom: 0px;
+}
+.navbar-brand.navbar-bg {
+    width: auto;
+}
+ .widget-title.b{
+    font-family: cairo;
+    text-align: right;
+    color: #000;
+}
+.fontwe1{
+    font-size: 18px;
+    font-family: cairo;
+    text-align: justify;
+}
+.fontwe11{
+    font-family: cairo;
+    text-align: justify;
+}
+.fontwe2{
+    font-family: cairo;
+    text-align: right;
+    font-size: 20px;
+}
+.unstyled.arrow.a{
+    text-align: right;
+}
+.ontw{
+    font-size: 46px;
+    color: #ffffff;
+    font-family: cairo;
+}
+.qontw{
+    font-size: 25px;
+}
+.service-content {
+    margin-bottom: 25px;
+}
+.btn.btn-primary.z{
+    font-family: cairo;
+    font-size: 20px;
+}
+.fontwww1{
+    font-family: cairo;
+float: right;
+    font-size: 18px;
+    }
+#fcf-form {
+    display:block;
+}
+
+.fcf-body {
+    margin: 0;
+    font-family: -apple-system, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    padding: 30px;
+    padding-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    max-width: 100%;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-credit {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #545b62;
+}
+
+.fcf-credit a {
+    color: #545b62;
+    text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #e93f33;
+    border-color: #e93f33;
+    font-family: cairo;
+}
+
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #191919;
+    border-color: #191919;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
+}
+.conc{
+    font-family: cairo;
+    float: right;
+    font-size: 18px;
+}
+.image-block-content .feature-content {
+    padding-left: 0px;
+}
+.feature-content {
+    padding-left: 0px;
+}
+.plan a.btn {
+    font-size: 18px;
+    font-family: cairo;
+}
+.dropdown-item {
+    font-size:18px;
+}
+.text-center {
+    margin-top: 18px;
+}
