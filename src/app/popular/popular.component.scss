@@ -1,0 +1,11 @@
+@import'../home/main-color';
+body{
+
+    background-color:$popular-bg;
+}
+.popular-search {
+
+    position: absolute;
+    right: 250px;
+    top:100px;
+}

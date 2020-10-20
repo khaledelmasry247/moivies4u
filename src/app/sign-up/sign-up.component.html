@@ -1,0 +1,67 @@
+<body>
+<section class="register-section">
+    <div class="container p-5  py-5 w-50 ">
+        <h3 class="mb-5 text-center ">Registeration Form</h3>
+        <form [formGroup]='register' (ngSubmit)="getRegisterDate(register)">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                  
+                    <input type="text"
+                        [class.is-valid]='register.get("first_name").errors==null&&register.get("first_name").touched'
+                        formControlName='first_name' class="form-control" placeholder="first name">
+                    <p class="text-danger"
+                        *ngIf='register.get("first_name").errors!=null&&register.get("first_name").touched'> Invalid
+                        Firt Name</p>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <input type="text"
+                    [class.is-valid]='register.get("last_name").errors==null&&register.get("last_name").touched'
+                    formControlName='last_name' class="form-control" placeholder="last name">
+                    <p class="text-danger"
+                        *ngIf='register.get("last_name").errors!=null&&register.get("last_name").touched'> Invalid last
+                        Name</p>
+                </div>
+            </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                    <input type="text"
+                        [class.is-valid]='register.get("email").errors==null&&register.get("email").touched'
+                        formControlName='email' class="form-control" placeholder="email">
+                    <p class="text-danger"
+                        *ngIf='register.get("email").errors!=null&&register.get("email").touched'> Invalid
+                      email</p>
+                </div>
+            </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                    <input type="text"
+                        [class.is-valid]='register.get("password").errors==null&&register.get("password").touched'
+                        formControlName='password' class="form-control" placeholder="password">
+                    <p class="text-danger"
+                        *ngIf='register.get("password").errors!=null&&register.get("password").touched'> Invalid
+                        password</p>
+                </div>
+            </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                    <input type="text"
+                        [class.is-valid]='register.get("repassword").errors==null&&register.get("repassword").touched'
+                        formControlName='repassword' class="form-control" placeholder=" repassword">
+                    <p class="text-danger"
+                        *ngIf='register.get("repassword").errors!=null&&register.get("repassword").touched'> 
+                        repassword</p>
+                </div>
+            </div>
+
+            </div>
+            <button class='btn btn-secondary m-3' type="submit"> Submit</button>
+        </form>
+    </div>
+</section>
+</body>

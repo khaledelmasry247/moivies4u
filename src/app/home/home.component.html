@@ -1,0 +1,170 @@
+<body>
+<section class="search-section">
+    <div class="container ">
+        <div  class="row">
+          <ngx-typed-js    [typeSpeed]="150" [loop]='true' [strings]="['Welcome', 'Millions of movies', 'TV shows and people to discover', 'Explore now.']">
+            <h1 class="typing"></h1>
+          </ngx-typed-js>
+
+        </div>
+      <!-- <div class="row">
+
+            <input type='text'  [(ngModel)]='item' placeholder="Search for movies,tv,show,person...." class="w-100 ">
+        </div> -->
+    </div>
+</section>
+
+
+
+
+<section class="popular mt-5 overflow-auto "data-wow-duration='2s' data-wow-delay='.1s'>
+ <div class="container bg-white  ">
+     <div class="row ">
+         <div class="col-md-3">
+          <ngx-typed-js    [typeSpeed]="150" [loop]='true' [strings]="['Whats popular']">
+            <h3 class="typing"></h3>
+          </ngx-typed-js>
+
+         </div>
+       
+        <ngx-slick-carousel class="carousel" 
+        #slickModal="slick-carousel" 
+        style="width:100%"
+        [config]="slideConfig">
+         <div  ngxSlickItem class="col-md-4  position-relative" *ngFor='let movie of AllMovies' >
+          <img [src]='imgsrc+movie.poster_path' class="img-fluid">
+           <h6 class="text-center p-2">{{movie.title}}</h6>
+                    <div class="vote_averge">{{movie.vote_average}}</div>
+         </div>
+
+        </ngx-slick-carousel>
+     </div>
+   
+ </div>
+
+</section>
+<!-- cs ssssssssssssssssssssss -->
+
+
+
+
+
+
+
+
+
+<section class="mt-2 pt-5">
+    <div class="container ">
+      <div class="row position-relative">
+        <div class="col-md-12 offset-5 bg-info" >
+          
+         
+        </div>
+      </div>
+        <div class="row">
+          
+            <div   class="col-md-4  wow"  *ngFor=" let movie of movies|search:item|paginate : { id: 'listing_pagination', itemsPerPage: 1, currentPage: page,totalItems: totalRecords}" >
+              <div class="item card my-2 position-relative">
+                <div class="overlay position-absolute  text-center">{{movie.overview|cut}}</div>
+
+                <img [src]='imgsrc+movie.poster_path' class="img-fluid">
+                <h6 class="text-center">{{movie.title}}</h6>  
+                <div class="vote_averge">{{movie.vote_average}}</div>
+              
+            </div>
+                <!-- <img [src]='imgsrc+movie.poster_path' class="img-fluid"> -->
+              <!-- <h6 class="text-center">{{movie.title}}</h6> -->
+   
+            </div>
+   
+        </div>
+      
+<!-- paginateion control -->
+
+
+
+<div class="row text-center">
+
+
+    <div class="col-md-8 mx-auto">
+      <div>
+        <pagination-controls
+          id="listing_pagination"
+          maxSize="7"
+          directionLinks="true"
+          (pageChange)="getPagesIn($event)"
+
+        >
+    </pagination-controls>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    </div>
+   
+   </section>
+
+<section class="footer">
+<div class="container m-auto bg-light p-5">
+
+<div class="row">
+  <div class="col-md-4">
+    <!-- <img [src]='../../assets/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg' class="img-fluid"> -->
+  </div>
+<div class="col-2">
+<ul>
+  <li>The Basic</li>
+  <li>About TmDb</li>
+  <li>Contact us</li>
+  <li>Support Forms</li>
+  <li>Api</li>
+  <i>System Anaysis</i>
+
+</ul>
+</div>
+<div class="col-2">
+  <ul>
+    <li>GET INVOLVED</li>
+    <li>Contribution Bible    </li>
+    <li>3rd Party</li>
+    <li>Support Forms</li>
+    <li>Api</li>
+  <i>Add New TV show</i>
+  
+  </ul>
+  </div>
+  
+  <div class="col-2">
+    <ul>
+      <li>community</li>
+      <li>Guidelines      </li>
+      <li>Discussions      </li>
+      <li>Leaderboard      </li>
+      <li>Api</li>
+    <i>Twitter    </i>
+    
+    </ul>
+    </div>
+    <div>
+    <ul>
+      <li>LEGAL      </li>
+      <li>Terms of Use      </li>
+      <li>API Terms of Use      </li>
+      <li>Privacy Policy      </li>
+    
+    
+    </ul>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+</body>

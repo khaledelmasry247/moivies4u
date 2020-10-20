@@ -1,0 +1,50 @@
+<body>
+<section class="mt-5 pt-5">
+    <div class="container  ">
+      <div class="position-absolute popular-search " >
+
+          <input type='text' class="form-control" [(ngModel)]='item' size='30' placeholder=' Enter Search Movie'>
+                       {{item}}
+        </div>
+        <div class="row wow">
+          
+            <div   class="col-md-3 wow "   *ngFor=" let movie of popular_movies|search:item| paginate : { id: 'listing_pagination', itemsPerPage: 1, currentPage: page,totalItems: totalRecords}" >
+            <div class="item card m-2"  [routerLink]="['/movieDetails',movie.id]">
+
+                <img [src]='imgsrc+movie.poster_path' class="img-fluid">
+                <h6 class="text-center">{{movie.title}}</h6>   
+                <p class="text-center">{{movie.release_date}}</p>   
+             
+            </div>
+                <!-- <img [src]='imgsrc+movie.poster_path' class="img-fluid"> -->
+              <!-- <h6 class="text-center">{{movie.title}}</h6> -->
+   
+            </div>
+   
+        </div>
+
+
+
+
+
+
+
+        <div class="row text-center">
+
+
+            <div class="col-md-8 mx-auto">
+              <div>
+                <pagination-controls
+                  id="listing_pagination"
+                  maxSize="7"
+                  directionLinks="true"
+                  (pageChange)="getPagesIn($event)"
+        
+                >
+            </pagination-controls>
+              </div>
+            </div>
+          </div>
+    </div>
+    </section>
+   </body>

@@ -1,0 +1,122 @@
+<body >
+<section class="details_section ">
+  <div class="overlay">
+  <div class="container p-5">
+    
+    <div class="row ">
+      
+      <div class="col-md-3 position-relative">
+        <i class="fas fa-expand-arrows-alt item-expand title='expand'" data-toggle="modal" data-target="#exampleModal"></i>
+
+
+        <img [src]='imgsrc+movie_details?.poster_path' class="img-fluid rounded  position-absolute">
+      </div>
+
+      <div class='col-md-9  p-5 profile-image position-relative rounded  ' [ngStyle]="{'background': 'url('+imgsrc+movie_details?.backdrop_path+')'}">
+
+        <h2 class="text-light">{{movie_details?.title}}</h2>
+        <p class="text-light">{{movie_details?.release_date}}</p>
+        <ul class="mb-4">
+          <li *ngFor='let gen of movie_details?.genres' class="d-inline">
+            <span class="p-2 b m-1 text-light ">
+              {{gen.name}}
+            </span>
+
+          </li>
+          <li class="d-inline">
+
+            <span class="p-2  mb text-light">
+              {{movie_details?.runtime|mytime}}
+
+            </span>
+
+          </li>
+        </ul>
+        <p class="text-light">{{movie_details?.overview}}</p>
+
+      </div>
+      </div>
+    </div> 
+
+
+
+  </div>
+  
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- model body -->
+ <div class=" row expand "> 
+      <div class=" col-md-6 im  w-50 bg-info"  [ngStyle]="{'background': 'url('+imgsrc+movie_details?.backdrop_path+')'}">
+   
+
+     </div>
+   <div class=" col-md-6 expand-info  text-light">
+
+     <div class="col-md-12">
+     
+    <div class="col-md-12">
+
+    </div>
+    <div class="col-md-12">
+      
+    </div>
+  </div>
+  <!-- <hr> -->
+  <div class="col-md-12">
+    <p>primary?</p>
+
+  </div>  
+  <div class="col-md-12">
+    <p>Add by</p>
+
+  </div> 
+  <div class="col-md-12">
+    <p>mohamed?</p>
+
+  </div> 
+  <div class="col-md-7">
+    <label>release_date</label>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button type="button" class="btn  btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </button>
+      </div>
+      <input type="text" class="form-control "  value="{{movie_details?.release_date}}"  disabled aria-label="Text input with segmented dropdown button">
+      <!-- <p>{{lang}}</p> -->
+    
+    </div>   
+    <p class="text-light">production_companies</p>
+    <ul>
+      <li *ngFor='let pro of movie_details?.production_companies'>
+            {{pro.name}}
+
+      </li>
+    </ul>
+
+
+  </div>
+
+   </div>
+   
+   
+   
+     </div> 
+     <!-- the end close model body -->
+    </div>
+      <div class="modal-footer">
+        <button type="button btn-lg" class="btn btn-light p-1" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  <!-- </div> -->
+</div>
+  </div>
+</section>
+</body>

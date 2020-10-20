@@ -1,0 +1,30 @@
+@import'../home/main-color';
+
+body{
+
+    background-color:$body-bg ;
+   
+    height: 100vh;
+   }
+.sigin-section {
+
+  h1 {
+    color: $white;
+
+    font: {
+      family: 'lato';
+    }
+
+  }
+
+  input::placeholder {
+
+    font: {
+
+      size: 20px;
+      family:'lato'
+    }
+  }
+
+
+}
